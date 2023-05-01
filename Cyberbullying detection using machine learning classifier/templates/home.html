@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Cyberbullying Detection - Nehemiah App</title>
+
+	<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+	<link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+	<header>
+		<!-- <div class="container">
+		<div id="brandname">
+			CB DETECT APP
+		</div>
+		<h2>Cyberbuying Tweets Detector</h2>
+		
+	</div> -->
+	<nav class="container">
+        <div class="left-nav">
+          <a href="#">Home</a>
+          <a href="#">Tutorials</a>
+          <a href="#">Workflow</a>
+        </div>
+        <img src="../images/logo lmu hz.png" alt="SPGWAS" / class="nav-logo">
+        <div class="right-nav">
+          <a href="#">Login</a>
+          <a href="#" class="btn">Sign up</a>
+        </div>
+      </nav>
+      <div class="hero-container container">
+        <h1>Cyberbullying <br> Tweets Detector</h1>
+        <p>
+			This Cyberbullying detection web application is an online tool that can help you identify and prevent cyberbullying. It uses efficient and well trained algorithms to analyze and identify patterns that may indicate cyberbullying. Resources and advice on how to deal with cyberbullying can also be found on this website.
+        </p>
+        <div class="hero-cta">
+          <a href="#mlform" class="btn primary-cta">RUN TOOL</a>
+          <!-- <a href="#" class="btn primary-cta2">RUN WORKFLOW</a> -->
+        </div>
+        <img
+          src="../images/sysbiollaptop.png"
+          class="hero-img"
+          alt="CB Laptop"
+        />
+      </div>
+      <img src="../images/Ellipse1.svg" class="svg-1" />
+      <img src="../images/Ellipse2.svg" class="svg-2" />
+      <img src="../images/Ellipse3.svg" class="svg-3" />
+	</header>
+
+	<section class="ml-container" id="mlform">
+		<div></div>
+		<form action="{{ url_for('predict')}}" method="POST">
+			<p>Enter Your Tweet Here</p>
+			<!-- <input type="text" name="comment"/> -->
+			<textarea name="comment" rows="4" cols="50"></textarea>
+			<br/>
+	
+			<input type="submit" class="btn-full" value="Predict">
+			
+		</form>
+		<div></div>
+	</section>
+
+
+</body>
+</html>
+
